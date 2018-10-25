@@ -1,0 +1,22 @@
+{
+  "name": "bryan-hunter-portfolio",
+  "version": "1.0.0",
+  "description": "Modern, responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdhunter3141/new-portfolio.git"
+  },
+  "author": "Bryan Hunter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdhunter3141/new-portfolio/issues"
+  },
+  "homepage": "https://github.com/bdhunter3141/new-portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
