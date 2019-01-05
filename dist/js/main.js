@@ -4,6 +4,7 @@ const menu = document.querySelector('.menu')
 const menuNav = document.querySelector('.menu-nav')
 const menuBranding = document.querySelector('.menu-branding')
 const navItems = document.querySelectorAll('.nav-item')
+const footer = document.querySelector('#main-footer')
 
 // Set Initial State of Menu
 let showMenu = false;
@@ -31,3 +32,8 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Dynamic Footer Year
+const year = new Date().getFullYear()
+
+footer.innerHTML = `Copyright &copy; ${year}`

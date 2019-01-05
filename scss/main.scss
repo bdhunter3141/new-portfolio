@@ -34,6 +34,15 @@ h1, h2, h3 {
 a {
   color: #fff;
   text-decoration: none;
+
+  &.outbound-link {
+    color: $secondary-color;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
 }
 
 header {
@@ -89,7 +98,7 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .job-1 {
@@ -106,8 +115,13 @@ main {
 
   .job {
     background: lighten($primary-color, 5);
-    padding: 0.5rem;
+    padding: 2rem;
     border-bottom: $secondary-color 5px solid;
+
+    li {
+      margin: 10px 10px 10px -20px;
+    }
+
   }
 }
 
