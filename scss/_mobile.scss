@@ -7,22 +7,20 @@
 
 // Desktops & Laptops
 @include mediaLg {
-
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .about-info {
     grid-template-areas:
-    'bioimage'
-    'bio'
-    'job1'
-    'job2'
-    'job3';
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
-
 }
 
 // Tablets & Small Laptops
@@ -44,7 +42,7 @@
     min-height: 0;
 
     &.show {
-      transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0);
     }
   }
 
@@ -59,7 +57,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('../img/portrait_small.jpg');
+      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px;
     }
@@ -71,11 +69,11 @@
 
   .about-info {
     grid-template-areas:
-    'bioimage'
-    'bio'
-    'job1'
-    'job2'
-    'job3';
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
@@ -89,6 +87,22 @@
     font-style: italic;
     list-style: circle;
   }
+
+  .modal {
+    .modal-content {
+      width: 90%;
+      max-height: 100%;
+
+      h1,
+      p {
+        padding: 10px;
+      }
+
+      img {
+        padding: 10px;
+      }
+    }
+  }
 }
 
 // Smartphones
@@ -100,5 +114,20 @@
   .projects {
     grid-template-columns: 1fr;
   }
-}
 
+  .modal {
+    .modal-content {
+      width: 90%;
+      max-height: 100%;
+
+      h1,
+      p {
+        padding: 10px;
+      }
+
+      img {
+        padding: 10px;
+      }
+    }
+  }
+}

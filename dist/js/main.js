@@ -37,3 +37,36 @@ function toggleMenu() {
 const year = new Date().getFullYear()
 
 footer.innerHTML = `Copyright &copy; ${year}`
+
+// Trigger Modal
+
+var modalList = document.querySelectorAll(".modal");
+var triggerList = document.querySelectorAll(".trigger");
+var closeButtonList = document.querySelectorAll(".close-button");
+
+
+triggerList.forEach(trigger => {
+  trigger.addEventListener("click", (e) => {
+    const modalNumber = e.target.getAttribute('data-number');
+    toggleModal(modalNumber)
+  })
+})
+closeButtonList.forEach(closeButton => {
+  closeButton.addEventListener("click", (e) => {
+    const modalNumber = e.target.getAttribute('data-number');
+    toggleModal(modalNumber)
+  })
+})
+
+function toggleModal(modalNumber) {
+    modalList[modalNumber].classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+  const modalNumber = event.target.getAttribute('data-number');
+    if (event.target === modalList[modalNumber]) {
+        toggleModal(modalNumber);
+    }
+}
+
+window.addEventListener("click", windowOnClick);

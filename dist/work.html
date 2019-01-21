@@ -1,111 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Bryan Hunter - View my Work</title>
-</head>
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Bryan Hunter - View my Work</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About Me </a>
+          </li>
+          <li class="nav-item current">
+            <a href="work.html" class="nav-link"> Work </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> How To Reach Me </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="work">
+      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+      <h2 class="sm-heading">This is what I've been working on...</h2>
+      <p>
+        Check out
+        <a
+          href="https://resume.creddle.io/resume/bn35egkv0ia"
+          class="outbound-link"
+          target="_blank"
+          >my full resume</a
+        >!
+      </p>
+      <div class="projects">
+        <div class="item">
+          <a href="#!">
+            <img
+              src="img/projects/NACOpedia RTE.png"
+              class="trigger"
+              alt="NACOpedia: NACO Employee Portal"
+              data-number="0"
+            />
+            <div class="item-img-text">NACOpedia</div>
+          </a>
+          <a
+            href="https://employee.nacocanada.com/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a
+            href="https://github.com/nationalangelcapitalorganization/employee-portal-v2"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img
+              src="img/projects/ACT-Adventure Homepage.png"
+              class="trigger"
+              alt="A Call To Adventure (Personal Blog)"
+              data-number="1"
+            />
+            <div class="item-img-text">A Call to Adventure</div>
+          </a>
+          <a
+            href="https://www.actadventure.net/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a
+            href="https://github.com/bdhunter3141/act-adventure"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img
+              src="img/projects/Homies Discovery:Recommendation Page.png"
+              class="trigger"
+              alt="Homies: Entertainment Recommendations and News"
+              data-number="2"
+            />
+            <div class="item-img-text">Homies</div>
+          </a>
+          <a
+            href="https://github.com/rickysychan/homies"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img
+              src="img/projects/Jungle Product Page.png"
+              class="trigger"
+              alt="Jungle: A Ruby on Rails Mini E-Commerce Application"
+              data-number="3"
+            />
+            <div class="item-img-text">Jungle</div>
+          </a>
+          <a
+            href="https://github.com/bdhunter3141/jungle-rails"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img
+              src="img/projects/Chatty App.png"
+              class="trigger"
+              alt="Chatty App: A Chat Application Using Web Sockets"
+              data-number="4"
+            />
+            <div class="item-img-text">Chatty App</div>
+          </a>
+          <a
+            href="https://github.com/bdhunter3141/chatty-app"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img
+              src="img/projects/Tweeter.png"
+              class="trigger"
+              alt="Tweeter: A Simple, Single-Page Twitter Clone"
+              data-number="5"
+            />
+            <div class="item-img-text">Tweeter</div>
+          </a>
+          <a
+            href="https://github.com/bdhunter3141/tweeter"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODALS -->
+
+    <div class="modal" data-number="0">
+      <div class="modal-content">
+        <span class="close-button" data-number="0">×</span>
+        <h1>NACOpedia</h1>
+        <img
+          src="img/projects/NACOpedia RTE.png"
+          alt="NACOpedia: NACO Employee Portal"
+        />
+        <div class="modal-description">
+          <p><span class="stack-list">(React, Redux, Google Firebase)</span></p>
+          <p>
+            A React-based employee portal used to write, store, and display all
+            of a company's institutional knowledge. Uses Google Firebase for
+            authentication, web functions, and NoSQL database. A Rich Text
+            Editor allows for image upload and placement, video embeds, text
+            formatting, etc. which is converted and displayed in html. Articles
+            can be sorted by department and edited at a later date by their
+            original author.
+          </p>
+          <div class="modal-buttons">
+            <a
+              href="https://employee.nacocanada.com/"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a
+              href="https://github.com/nationalangelcapitalorganization/employee-portal-v2"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="work.html" class="nav-link">
-            Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main id="work">
-    <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-    <h2 class="sm-heading">This is what I've been working on...</h2>
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project1.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project2.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project4.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project5.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
+
+    <div class="modal" data-number="1">
+      <div class="modal-content">
+        <span class="close-button" data-number="1">×</span>
+        <h1>A Call to Adventure</h1>
+        <img
+          src="img/projects/ACT-Adventure Homepage.png"
+          alt="A Call To Adventure (Personal Blog)"
+        />
+        <div class="modal-description">
+          <p>
+            <span class="stack-list"
+              >(<strong>Originally Created Using:</strong> Wordpress, Divi
+              Theme)</span
+            >
+          </p>
+          <p>
+            <span class="stack-list"
+              >(<strong>Recreated Using:</strong> GatsbyJS, React, Contentful,
+              GraphQL)</span
+            >
+          </p>
+          <p>
+            A blog originally created using Divi and Wordpress with some custom
+            CSS and HTML. Recreated in 2019 using GatsbyJS, React, Contentful,
+            and GraphQL. Personally wrote all posts on the subject of personal
+            development and adventure.
+          </p>
+          <div class="modal-buttons">
+            <a
+              href="https://www.actadventure.net/"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a
+              href="https://github.com/bdhunter3141/act-adventure"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </main>
-  <footer id="main-footer">
-  </footer>
-  <script src="js/main.js"></script>
-</body>
+
+    <div class="modal" data-number="2">
+      <div class="modal-content">
+        <span class="close-button" data-number="2">×</span>
+        <h1>Homies</h1>
+        <img
+          src="img/projects/Homies Discovery:Recommendation Page.png"
+          alt="Homies: Entertainment Recommendations and News"
+        />
+        <div class="modal-description">
+          <p>
+            <span class="stack-list"
+              >(React, Ruby on Rails, Watson Machine-Learning API, SASS)</span
+            >
+          </p>
+          <p>
+            Homies is built with Ruby on Rails on the backend and React on the
+            front end. The application takes the user's entertainment interests
+            and compares them to the interests of other like-minded people on
+            twitter using machine learning. It then makes recommendations to the
+            user for other entertainment products they may like based on those
+            comparisons. Homies is also a social platform that allows users to
+            view, share, and comment on entertainment news with their friends.
+          </p>
+          <div class="modal-buttons">
+            <a
+              href="https://github.com/rickysychan/homies"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" data-number="3">
+      <div class="modal-content">
+        <span class="close-button" data-number="3">×</span>
+        <h1>Jungle</h1>
+        <img
+          src="img/projects/Jungle Product Page.png"
+          alt="Jungle: A Ruby on Rails Mini E-Commerce Application"
+        />
+        <div class="modal-description">
+          <p>
+            <span class="stack-list">(Ruby on Rails, PostgreSQL, SASS)</span>
+          </p>
+          <p>
+            A mini e-commerce application built with Rails 4.2 for purposes of
+            learning Rails. Users can create an account, purchase items, and
+            leave reviews with ratings.
+          </p>
+          <div class="modal-buttons">
+            <a
+              href="https://github.com/bdhunter3141/jungle-rails"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" data-number="4">
+      <div class="modal-content">
+        <span class="close-button" data-number="4">×</span>
+        <h1>Chatty App</h1>
+        <img
+          src="img/projects/Chatty App.png"
+          alt="Chatty App: A Chat Application Using Web Sockets"
+        />
+        <div class="modal-description">
+          <p>
+            <span class="stack-list">(React, NodeJS, SockJS-Client, SASS)</span>
+          </p>
+          <p>
+            A simple chat application using WebSockets and React. Send pictures
+            and messages. Features customizable user names.
+          </p>
+          <div class="modal-buttons">
+            <a
+              href="https://github.com/bdhunter3141/chatty-app"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" data-number="5">
+      <div class="modal-content">
+        <span class="close-button" data-number="5">×</span>
+        <h1>Tweeter</h1>
+        <img
+          src="img/projects/Tweeter.png"
+          alt="Tweeter: A Simple, Single-Page Twitter Clone"
+        />
+        <div class="modal-description">
+          <p>
+            <span class="stack-list">(NodeJS, Express, MongoDB, AJAX)</span>
+          </p>
+          <p>Tweeter is a simple, single-page Twitter clone.</p>
+          <p>
+            Created to practice my HTML, CSS, JS, jQuery and AJAX front-end
+            skills, and my Node, Express and MongoDB back-end skills.
+          </p>
+          <div class="modal-buttons">
+            <a
+              href="https://github.com/bdhunter3141/tweeter"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="main-footer"></footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
